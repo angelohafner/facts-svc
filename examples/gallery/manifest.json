@@ -1,0 +1,140 @@
+[
+  {
+    "preset": "tcr-only",
+    "config": {
+      "title": "Thyristor-controlled reactor (TCR)",
+      "transformer": true,
+      "branches": [
+        {
+          "name": "TCR 1",
+          "kind": "TCR"
+        }
+      ]
+    },
+    "files": [
+      "tcr-only.svg"
+    ]
+  },
+  {
+    "preset": "fc-tcr",
+    "config": {
+      "title": "Fixed capacitor + TCR (FC-TCR)",
+      "transformer": true,
+      "branches": [
+        {
+          "name": "FC 1",
+          "kind": "FC"
+        },
+        {
+          "name": "TCR 1",
+          "kind": "TCR"
+        }
+      ]
+    },
+    "files": [
+      "fc-tcr.svg"
+    ]
+  },
+  {
+    "preset": "tsc-tcr",
+    "config": {
+      "title": "Thyristor-switched capacitor + TCR",
+      "transformer": true,
+      "branches": [
+        {
+          "name": "TSC 1",
+          "kind": "TSC"
+        },
+        {
+          "name": "TCR 1",
+          "kind": "TCR"
+        }
+      ]
+    },
+    "files": [
+      "tsc-tcr.svg"
+    ]
+  },
+  {
+    "preset": "hybrid",
+    "config": {
+      "title": "Hybrid SVC: TSC, TCR and harmonic filters",
+      "transformer": true,
+      "branches": [
+        {
+          "name": "TSC 1",
+          "kind": "TSC"
+        },
+        {
+          "name": "TSC 2",
+          "kind": "TSC"
+        },
+        {
+          "name": "TCR 1",
+          "kind": "TCR"
+        },
+        {
+          "name": "5th filter",
+          "kind": "FILTER",
+          "harmonic_order": 5
+        },
+        {
+          "name": "7th filter",
+          "kind": "FILTER",
+          "harmonic_order": 7
+        }
+      ]
+    },
+    "files": [
+      "hybrid.svg"
+    ]
+  },
+  {
+    "preset": "multi-tsc",
+    "config": {
+      "title": "Multi-bank SVC: three TSC steps + TCR",
+      "transformer": true,
+      "branches": [
+        {
+          "name": "TSC 1",
+          "kind": "TSC"
+        },
+        {
+          "name": "TSC 2",
+          "kind": "TSC"
+        },
+        {
+          "name": "TSC 3",
+          "kind": "TSC"
+        },
+        {
+          "name": "TCR 1",
+          "kind": "TCR"
+        }
+      ]
+    },
+    "files": [
+      "multi-tsc.svg"
+    ]
+  },
+  {
+    "preset": "tsr-fc",
+    "config": {
+      "title": "Thyristor-switched reactor + fixed capacitor",
+      "transformer": true,
+      "branches": [
+        {
+          "name": "FC 1",
+          "kind": "FC"
+        },
+        {
+          "name": "TSR 1",
+          "kind": "TSR"
+        }
+      ]
+    },
+    "files": [
+      "tsr-fc.svg"
+    ]
+  }
+]

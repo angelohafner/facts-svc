@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "facts-svc"
+version = "0.1.0"
+description = "Modular, editable electrical schematics of Static VAR Compensators"
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [{name = "Angelo Alfredo Hafner"}]
+dependencies = []
+
+[project.optional-dependencies]
+schemdraw = ["schemdraw>=0.20"]
+png = ["cairosvg>=2.7"]
+
+[project.scripts]
+facts-svc = "facts_svc.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

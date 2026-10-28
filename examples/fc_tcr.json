@@ -1,0 +1,8 @@
+{
+  "title": "Custom FC-TCR SVC, direct PCC connection",
+  "transformer": false,
+  "branches": [
+    {"name": "Fixed capacitor", "kind": "FC"},
+    {"name": "TCR 1", "kind": "TCR"}
+  ]
+}

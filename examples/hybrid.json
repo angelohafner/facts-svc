@@ -1,0 +1,10 @@
+{
+  "title": "Custom SVC: two TSC banks, TCR, and 5th filter",
+  "transformer": true,
+  "branches": [
+    {"name": "TSC 1", "kind": "TSC"},
+    {"name": "TSC 2", "kind": "TSC"},
+    {"name": "TCR 1", "kind": "TCR"},
+    {"name": "5th filter", "kind": "FILTER", "harmonic_order": 5}
+  ]
+}
